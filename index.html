@@ -5,9 +5,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <nav class="">
+        <div class="navbar">
+          <div>
+            <img src="" alt="" /> <span><a href="">Moqups</a></span>
+          </div>
+          <div class="fitur">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#our-package">Our Package</a></li>
+              <li><a href="#call-us">Call Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="container">
+      <h1>Your trusted Travel Agent's</h1>
+      <h3>Your happines is our hapiness</h3>
+      <div class="container-flex">
+        <div class="left-home">
+          <div class="button-slider">
+            <div class="prev-button">
+              <button onclick="prevCard()">
+                <img src="assets/left-arrow.png" alt="" height="20px" />
+              </button>
+            </div>
+            <div class="next-button">
+              <button onclick="nextCard()">
+                <img src="assets/right-arrow.png" alt="" height="20px" />
+              </button>
+            </div>
+          </div>
+          <div class="slider-card">
+            <div class="img-banner">
+              <img src="assets/bali.jpg" alt="" />
+            </div>
+            <div class="comment">
+              <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+              <div class="user">
+                <img src="assets/user.png" alt="" width="45px" height="45px" />
+                <div>
+                  <h6>Leonardo Da Vinci</h6>
+                  <h5>Makelar</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-card">
+            <div class="img-banner">
+              <img src="assets/semarang.jpg" alt="" />
+            </div>
+            <div class="comment">
+              <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+              <div class="user">
+                <img src="assets/user.png" alt="" width="45px" height="45px" />
+                <div>
+                  <h6>Florence Hughes</h6>
+                  <h5>Ibu Rumah Tangga</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-card">
+            <div class="img-banner">
+              <img src="assets/solo.jpeg" alt="" />
+            </div>
+            <div class="comment">
+              <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+              <div class="user">
+                <img src="assets/user.png" alt="" width="45px" height="45px" />
+                <div>
+                  <h6>Samuel Etop</h6>
+                  <h5>Bapak Rumah Tangga</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-home">
+          <h4>Contact Us</h4>
+          <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+          <form action="index.html" id="form">
+            <div class="inputBox">
+              <label for="">Your Name:</label><br />
+
+              <input
+                type="text"
+                placeholder="First and last name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="">Email Addres:</label><br />
+              <input
+                type="email"
+                placeholder="Example@mail.com"
+                id="email"
+                required
+                onkeydown="validationEmail()"
+              /><span id="text"></span>
+            </div>
+            <div>
+              <label for="">What are you interested in?</label><br />
+              <select name="" id="">
+                <option selected="" disabled>-- Select option --</option>
+                <option value="">Solo</option>
+                <option value="">Bandung</option>
+                <option value="">jakarta</option>
+              </select>
+            </div>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="service">
+        <h6>
+          Use this space to provide users with more information about your
+          offer. Consider it a follow-up to your headline and explain the
+          benefits of your service or product
+        </h6>
+        <div>
+          <div class="numbering">
+            <img src="assets/circle-1.png" alt="" />
+            <p>
+              Your first feature, written in the form of a benefit statement.
+            </p>
+          </div>
+          <div class="numbering">
+            <img src="assets/circle-2.png" alt="" />
+            <p>
+              Your second feature, written in the form of a benefit statement.
+            </p>
+          </div>
+          <div class="numbering">
+            <img src="assets/circle-3.png" alt="" />
+            <p>
+              Your third feature written, in the form of a benefit statement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-package">
+      <div class="header">
+        <h1>Our Package</h1>
+      </div>
+      <div class="container">
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/worldwide.png" alt="" width="30px" height="30px" />
+            <div>
+              <div class="card-title">Bali</div>
+              <div class="card-body">
+                <p>
+                  Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner
+                  yang menarik
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/worldwide.png" alt="" width="30px" height="30px" />
+            <div>
+              <div class="card-title">Japan</div>
+              <div class="card-body">
+                <p>
+                  Travel dan wisata di japan. kunjungi cagar budaya dan kuliner
+                  yang menarik
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/worldwide.png" alt="" width="30px" height="30px" />
+            <div>
+              <div class="card-title">Singapore</div>
+              <div class="card-body">
+                <p>
+                  Travel dan wisata di Singapore. kunjungi cagar budaya dan
+                  kuliner yang menarik
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/star.png" alt="" width="30px" height="30px" />
+            <div>
+              <div class="card-title">Bandung</div>
+              <div class="card-body">
+                <p>
+                  This description supports and extends the bullet point above.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/star.png" alt="" width="30px" height="30px" />
+            <div>
+              <div class="card-title">Surabaya</div>
+              <div class="card-body">
+                <p>
+                  This description supports and extends the bullet point above
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/star.png" alt="" width="30px" height="30px" />
+            <div>
+              <div class="card-title">Third Feature</div>
+              <div class="card-body">
+                <p>
+                  This description supports and extends the bullet point above
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="call-us">
+      <h1>Your Closing Argument Headline</h1>
+      <p>
+        Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod
+        sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel
+        erat fringilla,
+      </p>
+      <a href="#" class="button">CALL TO ACTION</a>
+    </section>
+    <footer>
+      <h1>Moqups</h1>
+      <div class="footer">
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="footer">
+        <p>© 2019</p>
+        <p>Moqups</p>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
